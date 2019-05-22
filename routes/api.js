@@ -36,7 +36,7 @@ client.connect(function(err){
   //res.send(fortune.toString() + '\n');
 });
 
-router.post('/', function(req, res, next){
+/*router.post('/', function(req, res, next){
 
   body = req.body;
   console.log(body);
@@ -49,7 +49,13 @@ router.post('/', function(req, res, next){
     })
   });
   
-  //INSERT INTO todo (task, completed) VALUES ($1, $2) RETURNING id
+});
+*/
+
+router.post('/', function(req, res, next){
+  status = { 'status': 'OK' };
+
+  res.send(status);
 });
 
 module.exports = router;
